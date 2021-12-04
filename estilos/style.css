@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #f9f9f9;
+}
+
+.h1-encabezado {
+    text-align: center;
+    color: #5e656b;
+}
+.form-card {
+    padding: 0 1rem 1rem;
+    background-color: #f7f7f7;
+    /* background-color: #ffa35c ; */
+    /* border-left: #bee5eb solid 5px; */
+    /*background-color:#009aac;*/
+}
+label {
+    font-weight: bold;
+}
+legend {
+    font-size: 1rem;
+    background-color: #dee2e6;
+    margin: 0 0 2rem;
+    padding: 0.5rem 0;
+    border-radius: 0;
+    /* border-left: #dee2e6  1px solid; */
+    /* border-bottom: 2px solid #ffa35c; */ 
+    /* text-align: center; */
+
+}
+fieldset {
+    background-color: #f1efef;
+}
+#resultado-personas {
+    min-height: 100px;
+}
+
+span.ficha {
+    font-weight: bold;
+}
+.ranking-a__number, .ranking-b__number {
+    width: 5rem;
+}
+
+a.nav-link, .navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+#card1-resultado, #card2-resultado{
+    background-color: transparent;
+    border: none;
+}
+/*
+.paso1 {
+    grid-area: "col-1";
+}
+.paso2 {
+    grid-area: "col-2";
+}
+.paso3 {
+    grid-area: "col-3";
+}
+.contenedor-grilla {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-areas:
+    "col-1"
+    "col-2"
+    "col-3"
+}
+
+@media (min-width: 500px) {
+    .contenedor-grilla  {
+      grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "col-1 col-2"
+        
+        "col-3 col-3"
+
+    }
+}
+*/
+
+
+.pasos {
+    color: #5e656b;
+    text-align:center;
+}
+.lambdaweb-title {
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .bg-dark {
+    background-color: #2b7bc2 !important;
+  }
