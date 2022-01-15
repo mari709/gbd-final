@@ -14,7 +14,7 @@ $sqlquery = "select * from contactos where localidad like '".$valor1."' and dir_
 $view2 ='';
 
 $view2 .="
-<p>lista de <b>contribuyentes</b> calle <b>
+<p>Lista de <b>contribuyentes</b> calle <b>
 ";
 $view2 .=$valor2; 
 $view2 .= "</b> entre las alturas <b>";
@@ -24,9 +24,11 @@ $view2 .= "y";
 $view2 .= " <b>";
 $view2 .= $valor4;
 $view2 .= "</b>";
+$view2 .= "<br>";
 $view2 .= "<a href ='exportarexcell.php?v1=".$valor1."&v2=".$valor2."&v3=".$valor3."&v4=".$valor4."' class= 'btn btn-success btn-sm'><i class='bi bi-file-earmark-excel-fill'> Exportar lista a Excel</i></a></p>";
 
-$view2 .="<table class='table table-striped table-sm align-middle'>
+$view2 .="<div class='table-responsive-sm'>
+<table class='table table-striped table-sm align-middle'>
   <thead class='thead-dark'>
     <tr id='titulo'>
       <th>NOMBRE</th>
@@ -94,7 +96,7 @@ $view2 .="
 <td>".$row['pcia']."</td>
 </tr>
 <tr>
-<td>CODIGO POSTAL</td>
+<td>C&Oacute;DIGO POSTAL</td>
 <td>".$row['c_postal']."</td>
 </tr>
 </table></div>
@@ -105,7 +107,7 @@ $view2 .="
 	});
 </script>";
 };
-$view2 .="</table>";
+// $view2 .="</table>";
 
 $view2 .="</td></tr>";
 $view2 .="</table>";

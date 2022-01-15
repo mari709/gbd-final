@@ -13,7 +13,7 @@ session_start();
 
   <body class="text-center">
     <form class="form-signin" action = "access.php" method="post">
-    <img src="favicon.png"/>
+    <img src="favicon.png" alt="logo"/>
       <h2 class="m-3 lambdaweb-title">Lambda Web</h2>
       <h6 class="mb-3"><br></h6>
       <label for="username" class="sr-only">Nombre de usuario</label>

@@ -19,13 +19,13 @@ $sqlquery ="select * from contactos where localidad like '".$_GET['v1']."' and d
 $sqlcall = mysqli_query($link,$sqlquery);
 while ($data = mysqli_fetch_assoc($sqlcall)){
     echo "<tr>";
-    echo "<td>'".$data['nombre']."'</td>";
-    echo "<td>'".$data['dir_calle']."'</td>";
-    echo "<td>'".$data['dir_numero']."'</td>";
-    echo "<td>'".$data['dir_piso_depto']."'</td>";
-    echo "<td>'".$data['localidad']."'</td>";
-    echo "<td>'".$data['pcia']."'</td>";
-    echo "<td>'".$data['c_postal']."'</td>";
+    echo "<td>".$data['nombre']."</td>";
+    echo "<td>".$data['dir_calle']."</td>";
+    echo "<td>".$data['dir_numero']."</td>";
+    echo "<td>".$data['dir_piso_depto']."</td>";
+    echo "<td>".$data['localidad']."</td>";
+    echo "<td>".$data['pcia']."</td>";
+    echo "<td>".$data['c_postal']."</td>";
     echo "<tr>";
 }
 ?>

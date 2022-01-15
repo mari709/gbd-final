@@ -18,15 +18,21 @@ if(isset(($_SESSION['status']))){
       <section class="container pt-4 buscador-personas">
         <h1 class="h1-encabezado pt-4 pb-4">Buscar personas por calle</h1>
       </section>
-      <div class="container form-group w-50 text-left">
-      <label for="input-buscar-calle">Escribir nombre de la calle</label>
-                <input  type="text" class="form-control" id="input-buscar-calle" name="input-buscar-calle"  placeholder ="Tucumán" maxlength="50">
-      </div>
+      
+      <main>
+      <section class="container mt-4"> 
+      <form class='card p-4 card-shadow'>
+        <div class="container form-group w-50 text-left">
+          <label for="input-buscar-calle"><h5 class="pasos">Escribe el nombre de la calle</h5></label>
+          <input type="text" class="form-control ml-2" id="input-buscar-calle" name="input-buscar-calle"  placeholder ="Tucumán" maxlength="50">
+        </div>
 
 
-      <div class="text-center container" id="resultado-calle"></div> 
-      <div class="text-center container" id="informe"></div>
-
+        <div class="text-center container" id="resultado-calle"></div> 
+        <div class="text-center container" id="informe"></div>
+      </form>
+</section>
+      </main>
 
     </body>
 </html>

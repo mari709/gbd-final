@@ -19,40 +19,43 @@ if(isset(($_SESSION['status']))){
       <section class="container pt-4 buscador-personas">
         <h1 class="h1-encabezado pt-4 pb-4">¡Bienvenido a Lambda Web!</h1>
       </section>
+      <main>
+      <div class="card-deck p-4 m-4">
+      
+      <div class="card card-shadow text-center">
+          <div class="card-body">
+            <figure>
+              <img src="./img/buscar-persona.png " width=70/>
+            </figure>
+            <h5 class="card-title text-uppercase">Buscar personas</h5>
+            <p class="card-text">Buscar contribuyentes a partir de su <b>nombre</b>, <b>domicilio</b>, y/o <b>localidad</b></p>
+            <a href="buscar_personas.php" class="btn btn-primary">acceder</a>
+          </div>
+        </div>
 
-      <div class="card-group p-4 m-4">
-  <div class="card text-center">
-    <div class="card-body">
-      <figure>
-        <img src="./img/buscar-persona.png " width=70/>
-      </figure>
-      <h5 class="card-title text-uppercase">Buscar personas</h5>
-      <p class="card-text">Buscar contribuyentes a partir de su <b>nombre</b>, <b>domicilio</b>, y/o <b>localidad</b></p>
-      <a href="buscar_personas.php" class="btn btn-primary">acceder</a>
-    </div>
-  </div>
-  <div class="card text-center">
-    <div class="card-body">
-      <figure>
-      <img src="./img/ranking.png " width=70/>
-</figure>
-<h5 class="card-title text-uppercase">Ranking de calles</h5>
-      <p class="card-text">Conocer <b>calles con más contribuyentes</b> en un rango elegido de alturas de calles.</p>
-      <a href="ranking_calles.php" class="btn btn-primary">acceder</a>
-    </div>
-  </div>
-  <div class="card text-center">
-    <div class="card-body">
-    <figure>
-      <img src="./img/buscar-calle.png " width=70/>
-</figure>
-      <h5 class="card-title text-uppercase">Buscar por calle</h5>
-      <p class="card-text">Buscar <b>contribuyentes de una determinada calle</b> y rango de númeración de calle.</p>
-      <a href="buscar_calle.php" class="btn btn-primary">acceder</a>
-    </div>
-  </div>
-</div>
- 
+        <div class="card card-shadow text-center">
+          <div class="card-body">
+            <figure>
+            <img src="./img/ranking.png " width=70/>
+            </figure>
+            <h5 class="card-title text-uppercase">Ranking de calles</h5>
+                  <p class="card-text">Conocer las <b>calles con más contribuyentes</b> en un rango elegido de alturas de calles.</p>
+                  <a href="ranking_calles.php" class="btn btn-primary">acceder</a>
+                </div>
+              </div>
+        
+        
+              <div class="card card-shadow text-center">
+                <div class="card-body">
+                  <figure>
+                    <img src="./img/buscar-calle.png " width=70/>
+                  </figure>
+                  <h5 class="card-title text-uppercase">Buscar por calle</h5>
+                  <p class="card-text">Buscar <b>contribuyentes de una determinada calle</b> y rango de númeración de calle.</p>
+                  <a href="buscar_calle.php" class="btn btn-primary">acceder</a>
+                </div>
+              </div>
+</main>
   </body>
 </html>
 <?php

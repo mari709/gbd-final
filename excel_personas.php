@@ -19,7 +19,7 @@ header('Content-Disposition: attachment; filename=personasbuscadas.xls');
   <td>Piso/Depto</td>
   <td>Localidad</td>
   <td>Provincia</td>
-  <td>Codigo Postal</td>
+  <td>C&oacute;digo Postal</td>
    
   </tr>
 <?php
@@ -28,13 +28,13 @@ $sqlcall = mysqli_query($link,$sqlquery);
 while($data = mysqli_fetch_assoc($sqlcall)){
 
   echo "<tr>";
-  echo "<td>'".$data['nombre']."'</td>";
-  echo "<td>'".$data['dir_calle']."'</td>";
-  echo "<td>'".$data['dir_numero']."'</td>";
-  echo "<td>'".$data['dir_piso_depto']."'</td>";
-  echo "<td>'".$data['localidad']."'</td>";
-  echo "<td>'".$data['pcia']."'</td>";
-  echo "<td>'".$data['c_postal']."'</td>";
+  echo "<td>".$data['nombre']."</td>";
+  echo "<td>".$data['dir_calle']."</td>";
+  echo "<td>".$data['dir_numero']."</td>";
+  echo "<td>".$data['dir_piso_depto']."</td>";
+  echo "<td>".$data['localidad']."</td>";
+  echo "<td>".$data['pcia']."</td>";
+  echo "<td>".$data['c_postal']."</td>";
   echo "</tr>";
   
 

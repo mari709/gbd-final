@@ -15,12 +15,11 @@ if(isset(($_SESSION['status']))){
 <!--navbar-->
 <?php include_once './vistas/navbar.php' ?>
       <section class="container pt-4 buscador-personas">
-        <h1 class="h1-encabezado pt-4 pb-4">Buscador de personas ingresando información total o parcial</h1>
+        <h1 class="h1-encabezado pt-4 pb-4">Buscar personas</h1>
       </section>
-      
       <section class="container mt-4"> 
-        <form class='card p-3'>
-            <h5>Completa total o parcialmente 1 o más campos para realizar la consulta</h5>
+        <form class='card p-4 card-shadow'>
+            <h5 class="pasos">Completa total o parcialmente 1 o más campos para realizar la consulta</h5>
           <div class='card-body'>
             <div class="form-group">
               <div class="row pl-4 pr-4">
@@ -41,10 +40,10 @@ if(isset(($_SESSION['status']))){
                 </div>
               </div>
             </div>
-          </div>
+          </div>        
         </form>
       </section>
-      <div class="text-center container" id="resultado-personas"></div> 
+      <div class="text-center container" id="resultado-personas"></div>
       
       
       <script>
@@ -61,7 +60,7 @@ if(isset(($_SESSION['status']))){
           url: 'personas_buscadas.php',
           type: 'post',
           beforeSend: function() {
-            $("#resultado-personas").html("<div class='alert alert-light' role='alert'>Realizando búsqueda...</div>");
+            $("#resultado-personas").html("<div class='alert alert-light card card-shadow' role='alert'>Realizando búsqueda...</div>");
           },
           success: function(response) {
             $("#resultado-personas").html(response);

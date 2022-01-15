@@ -27,19 +27,19 @@ $sql_search_assoc2 = mysqli_fetch_assoc($sql_search2);
 $number_mayor = $sql_search_assoc2['dir_numero'];// altura maxima de la calle
 
 
-echo "<table class='container form-group w-50' text-center>";
-  echo "<tr>";
-    echo "<td>";
+echo "<div class='card-body'>";
             echo "<div> <b>$first_name</b></div>";
-            echo '<label for="caja_busqueda" class ="texto">ALTURA A</label>';
-            echo "<input type='range' value ='0' name='max_range_input'  min='0' max='".$number_mayor."' onchange='updTextmax(this.value);'>";
-            echo "<input class='text-left' type='text' id='max_text_input' value='0'>";
-            echo "<br>";
-            echo "<label for='caja_busqueda2'class ='texto'>ALTURA B</label>";
-            echo "<input type='range' value='".$number_mayor."' name='min_range_input' step='10' min='0' max='".$number_mayor."' onchange='updTextmin(this.value);'>";
-            echo "<input type='text' id='min_text_input' value='".$number_mayor."'>";
-      echo "</td>";
+            echo '<label for="max_text_input"><span> Altura A  </span></label>';
+            echo "<input class='text-left' step='100' type='number' id='max_text_input' value='0' min='0'>";
+
+            echo "<div><label for='min_text_input'class ='texto'> Altura B </label>";
+            echo "<input type='number' step='100' id='min_text_input' value='0' min='0'>";
+            echo "</div>";
+            echo "</div>";
 ?>
+            <!-- echo "<input type='range' value='".$number_mayor."' name='min_range_input' step='10' min='0' max='".$number_mayor."' onchange='updTextmin(this.value);'>"; -->
+            <!-- echo "<input type='range' value ='0' name='max_range_input'  min='0' max='".$number_mayor."' onchange='updTextmax(this.value);'>"; -->
+
             <td>
               <input type="button" class ="btn btn-primary btn-sm " href="javascript:;" onclick="realizaProceso2($('#max_text_input').val(),$('#min_text_input').val(),'<?php echo $streetn;?>');return false;" value="mostrar"/> 
 

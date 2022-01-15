@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark mb-4 pl-4 pr-4">
   <!-- Brand -->
   <a class="navbar-brand" href="./index.php">
-    <img width="40" height="40" src="favicon.png"/>
+    <img width="40" height="40" alt="logo" src="favicon.png"/>
   </a>
   <!-- Links -->
   <ul class="navbar-nav mr-auto mt-2 mt-lg-0">

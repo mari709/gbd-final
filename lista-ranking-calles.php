@@ -28,10 +28,10 @@ $sqlhacer = mysqli_query($link,$sql);
 while ($data= mysqli_fetch_assoc($sqlhacer))
 {
 echo "<tr>";    
-echo "<td>'".$puesto."'</td>";
-echo "<td>'".$data['counter']."'</td>";
-echo "<td>'".$data['dir_calle']."'</td>";
-echo "<td>'".$data['localidad']."'</td>";
+echo "<td>".$puesto."</td>";
+echo "<td>".$data['counter']."</td>";
+echo "<td>".$data['dir_calle']."</td>";
+echo "<td>".$data['localidad']."</td>";
 echo "</tr>";
 $puesto++;
 }

@@ -27,7 +27,7 @@ if(($sql_res>0)&&($sql_res<100))
 {
 
 $view4.="<table mx-auto table table-striped table-sm ";
-$view4.="<tr><td class=' mx-auto' ><a href ='exportarexcell4.php?data1=$calle&data2=$menor&data3=$mayor' class= 'btn btn-success btn-sm'><i class='bi bi-file-earmark-excel-fill mx-auto'> Exportar lista a Excel</i></a></td></tr>";
+$view4.="<tr><td class=' mx-auto' ><a href ='excel_buscar_calles.php?data1=$calle&data2=$menor&data3=$mayor' class= 'btn btn-success btn-sm'><i class='bi bi-file-earmark-excel-fill mx-auto'> Exportar lista a Excel</i></a></td></tr>";
 $view4.="<tr><td>";
 $view4.="</table>";
 
@@ -112,7 +112,7 @@ $view4.="<tr>
        $view4 .="
        </td>
        <tr>
-       <td>CODIGO POSTAL :</td>
+       <td>CÓDIGO POSTAL :</td>
        <td>";
        $view4 .= $fila['c_postal'];
        $view4 .="
